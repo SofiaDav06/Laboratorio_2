@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Perfiles</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    
+    body {
+      background-image: url("Imagen/bg2.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+    
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    .profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 500px;
+      height: 600px;
+      color: white;
+      text-align: center;
+      font-family: 'Bebas Neue', sans-serif;
+      margin: 0 20px;
+      border-radius: 10px;
+    }
+    
+    .green-profile {
+      background-color: green;
+    }
+    
+    .red-profile {
+      background-color: red;
+    }
+    
+    .profile-image {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+    
+    .profile-name {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      margin-top: 0;
+    }
+    
+    .profile-description {
+      font-size: 20px;
+      margin-top: 0;
+    }
+    
+    .home-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #198E3C;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .home-button i {
+        margin-right: 5px;
+    }
+  
+    .home-button:hover {
+        background-color: #145C27;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="profile green-profile">
+      <img src="Imagen/sofia.png" alt="Foto Persona 1" class="profile-image">
+      <h1 class="profile-name">Sofía Dávila</h1>
+      <p class="profile-description">Estudiante de Liceo Cristiano roca de Ayuda, cursando ciencias y letras con orientación a computación y programación. 
+        Último año. Onceavo Bachillerato.</p>
+    </div>
+    
+    <div class="profile red-profile">
+      <img src="Imagen/katty.png" alt="Foto Persona 2" class="profile-image">
+      <h1 class="profile-name">Katherine de León</h1>
+      <p class="profile-description">Estudiante en Liceo Cristiano roca de Ayuda, cursando ciencias y letras en orientación a diseño gráfico. 
+        Último año. Onceavo Bachillerato.</p>
+    </div>
+  </div>
+  
+  <a href="index.html" class="home-button">
+    <i class="fas fa-home"></i>
+    <span>Retornar</span>
+  </a>
+</body>
+</html>
